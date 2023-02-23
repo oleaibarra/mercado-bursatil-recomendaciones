@@ -24,13 +24,18 @@ Metodología:
 
 1) Para lograr el objetivo #1 se realizará lo siguiente: 
 
-1.1 Descargar los datos históricos del índice SP500 y de las empresas que lo conforman utilizando la librería yfinance.
-1.2 Realizar una exploración inicial de los datos, observando la distribución de variables numéricas, la presencia de outliers o valores faltantes, y cualquier otra característica relevante.
-1.3 Visualizar la variación de precios en el tiempo, tanto del índice SP500 como de las acciones individuales, utilizando gráficos de línea.
-1.4 Comparar la variación de precios entre las diferentes acciones mediante la creación de gráficos de líneas superpuestas.
-1.5 Calcular y visualizar estadísticas bursátiles relevantes, tales como la volatilidad, el promedio móvil, el retorno diario, el riesgo, entre otras.
-1.6 Identificar cualquier patrón, tendencia o comportamiento relevante a través de la exploración y el análisis de los datos.
-Descargar los datos históricos del índice SP500 y de las empresas que lo componen utilizando el módulo yfinance.
+  1.1 Descargar los datos históricos del índice SP500 y de las empresas que lo conforman utilizando la librería yfinance.
+  
+  1.2 Realizar una exploración inicial de los datos, observando la distribución de variables numéricas, la presencia de outliers o valores faltantes, y cualquier otra      característica relevante.
+  
+  1.3 Visualizar la variación de precios en el tiempo, tanto del índice SP500 como de las acciones individuales, utilizando gráficos de línea.
+  
+  1.4 Comparar la variación de precios entre las diferentes acciones mediante la creación de gráficos de líneas superpuestas.
+  
+  1.5 Calcular y visualizar estadísticas bursátiles relevantes, tales como la volatilidad, el promedio móvil, el retorno diario, el riesgo, entre otras.
+  
+  1.6 Identificar cualquier patrón, tendencia o comportamiento relevante a través de la exploración y el análisis de los datos.
+
 
 2) Para lograr el objetivo #2 se realizará lo siguiente:
 
