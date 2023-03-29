@@ -174,5 +174,16 @@ El perfil especulativo con objetivo de ingreso y el perfil especulativo con obje
 
 En resumen, el perfil especulativo con objetivo de ingreso se enfoca en generar ingresos a corto plazo a través de inversiones especulativas, mientras que el perfil especulativo con objetivo de crecimiento busca maximizar el potencial de crecimiento a largo plazo, aunque esto implique un mayor riesgo y volatilidad en el corto plazo. Ambos perfiles tienen una mayor tolerancia al riesgo que los perfiles conservadores y moderados, y por lo tanto, pueden ser más adecuados para inversores que buscan oportunidades de alto riesgo y alta recompensa.
 
-Para consultar las recomendaciones generadas ir a: 
+Para consultar las recomendaciones generadas ir a:
+
+
+
+# KPIs
+
+1. Ratio de éxito de las recomendaciones: Proporción de empresas que se recomendaron y que tuvieron un desempeño anual igual o superior al rango mínimo definido para esa combinación de perfil con objetivo, desde el día recomendado hasta la fecha actual.
+Este KPI se puede calcular como la proporción de empresas recomendadas que han tenido un rendimiento anual igual o superior al rango mínimo definido, dividido entre el total de empresas recomendadas.
+
+2. Rentabilidad media de las recomendaciones: Este KPI nos indicaría cuánto hemos ganado en promedio con las recomendaciones que se han dado. Podríamos calcular la rentabilidad media como el promedio de los rendimientos obtenidos por todas las empresas recomendadas.
+
+3. Nivel de riesgo de las recomendaciones: Este KPI nos indicaría el nivel de riesgo que hemos tomado en nuestras recomendaciones. Podríamos calcular el nivel de riesgo como la desviación estándar de los rendimientos obtenidos por todas las empresas recomendadas.
 
