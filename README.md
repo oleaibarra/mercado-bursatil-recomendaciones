@@ -83,10 +83,36 @@ Coeficiente de Sharpe
 Coeficiente de información
 Cada uno de estos cálculos se realiza mediante ciclos para cada una de las empresas que conforman el S&P500, y se utilizan los métodos y funciones de la librería numpy y pandas para los cálculos matemáticos.
 
+# Perfiles y objetivos de inversión
+
+Objetivos de inversión:
+
+Preservación de capital: El objetivo es proteger el capital invertido y minimizar el riesgo de pérdidas.
+
+Ingreso: El objetivo es generar ingresos regulares a través de los dividendos, intereses y otros pagos.
+
+Crecimiento: El objetivo es aumentar el valor de la inversión a largo plazo mediante la apreciación del capital.
+
+Cobertura de inflación: El objetivo es mantener el poder adquisitivo del capital a largo plazo, evitando que la inflación disminuya el valor real del capital invertido.
+
+Diversificación: El objetivo es distribuir los riesgos a través de una variedad de clases de activos y estrategias de inversión, con el fin de minimizar la volatilidad y maximizar la estabilidad del rendimiento.
+
+
+Perfiles de riesgo:
+
+Conservador: Este perfil busca minimizar el riesgo y preservar el capital, generalmente invirtiendo en instrumentos de renta fija y depósitos a plazo.
+
+Moderado: Este perfil busca un equilibrio entre la preservación del capital y el crecimiento, invirtiendo en una combinación de instrumentos de renta fija y variable.
+
+Agresivo: Este perfil busca maximizar el crecimiento de la inversión, asumiendo mayores riesgos en instrumentos de renta variable y activos de mayor riesgo.
+
+Especulativo: Este perfil asume altos riesgos con el objetivo de obtener ganancias a corto plazo, invirtiendo en instrumentos de alta volatilidad y en mercados de nicho.
+
 # Recomendaciones de empresas
 
-Para generar recomendaciones, se crearon 8 combinaciones de perfil de riesgo con objetivo de inversión. 
-A continuación se describen los criterios utilizados: 
+Para este proyecto, para generar recomendaciones, se crearon 8 combinaciones de perfil de riesgo con objetivo de inversión. 
+
+A continuación se describen los criterios utilizados según la combinación: 
 
 Para el perfil "Conservador" y el objetivo "Preservación de capital", se definen los siguientes umbrales y rangos para las métricas:
 Umbral diario de volatilidad: 0.02
