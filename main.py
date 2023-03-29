@@ -44,7 +44,8 @@ elif opcion == 'Análisis del S&P 500':
         st.subheader('S&P500 2000-2023')
 
             # Load the S&P 500 data
-        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/sp500.csv', index_col='Date', parse_dates=True)
+        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/raw/main/sp500.csv', header=0, index_col='Date', parse_dates=True)
+
 
         # Create a figure and axis object
         fig, ax = plt.subplots(figsize=(12, 6))
@@ -97,7 +98,8 @@ elif opcion == 'Análisis del S&P 500':
         gdp_q = gdp.resample('Q').last()
 
         # Load the S&P 500 data
-        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/sp500.csv', index_col='Date', parse_dates=True)
+        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/raw/main/sp500.csv', header=0, index_col='Date', parse_dates=True)
+
 
         # resample the S&P 500 data to monthly frequency
         sp500_adj_close = sp500['Adj Close'].resample('M').last()
@@ -173,7 +175,8 @@ elif opcion == 'Análisis del S&P 500':
         fred = Fred(api_key='083c28f1f599f240f0439dd8205695e8')
 
         # Load the S&P 500 data
-        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/sp500.csv', index_col='Date', parse_dates=True)
+        sp500 = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/raw/main/sp500.csv', header=0, index_col='Date', parse_dates=True)
+
 
         # resample the S&P 500 data to monthly frequency
         sp500_adj_close = sp500['Adj Close'].resample('Q').last()
