@@ -281,7 +281,7 @@ elif opcion == 'Selección de combinación riesgo-objetivo':
     ###############################
 
 
-    df = pd.read_parquet('df_metrics_all.parquet')
+    df = pd.read_parquet('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/df_metrics_all.parquet')
     tickers = np.array(df.index).tolist()
     daily_volume = df['daily_volume'].to_dict()
     market_cap = df['market_cap'].to_dict()
