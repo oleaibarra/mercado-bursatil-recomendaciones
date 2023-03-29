@@ -83,4 +83,96 @@ Coeficiente de Sharpe
 Coeficiente de información
 Cada uno de estos cálculos se realiza mediante ciclos para cada una de las empresas que conforman el S&P500, y se utilizan los métodos y funciones de la librería numpy y pandas para los cálculos matemáticos.
 
+# Recomendaciones de empresas
+
+Para generar recomendaciones, se crearon 8 combinaciones de perfil de riesgo con objetivo de inversión. 
+A continuación se describen los criterios utilizados: 
+
+Para el perfil "Conservador" y el objetivo "Preservación de capital", se definen los siguientes umbrales y rangos para las métricas:
+Umbral diario de volatilidad: 0.02
+Umbral anual de volatilidad: 0.2
+Umbral de beta: 1.0
+Rango de retornos anuales: (0.0427, 0.06)
+Se recomendarán las compañías que cumplen con estos criterios y que se consideran seguras para preservar el capital del inversor.
+
+Para el perfil "Conservador" y el objetivo "Ingreso", se definen los siguientes umbrales y rangos para las métricas:
+Umbral diario de volatilidad: 0.01
+Umbral anual de volatilidad: 0.15
+Umbral de beta: 1.0
+Rango de retornos anuales: (0.0427, 0.06)
+Rango de retornos diarios: (0, 0.005)
+Umbral de capitalización de mercado: 500000000
+Umbral de volumen diario: 1000000
+Se recomendarán las compañías que cumplen con estos criterios y que generan un ingreso estable y seguro para el inversor conservador.
+
+Para el perfil "Moderado" y el objetivo "Ingreso", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.06, 0.12)
+Umbral anual de volatilidad: 0.22
+Umbral diario de volatilidad: 0.015
+Umbral de beta: 1.0
+Umbral de volumen diario: 1000000
+Se recomendarán las compañías que cumplen con estos criterios y que generan un ingreso moderado para el inversor moderado.
+
+Para el perfil "Moderado" y el objetivo "Crecimiento", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.1, 0.2)
+Umbral anual de volatilidad: 0.23
+Umbral diario de volatilidad: 0.02
+Umbral de beta: 1.1
+Umbral de capitalización de mercado: 10000000000
+Umbral de volumen diario: 4000000
+Se recomendarán las compañías que cumplen con estos criterios y que se consideran oportunidades de crecimiento para el inversor moderado.
+
+Para el perfil "Agresivo" y el objetivo "Ingreso", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.15, 0.18)
+Umbral anual de volatilidad: 0.3
+Umbral diario de volatilidad: 0.02
+Umbral de beta: 1.2
+Umbral de capitalización de mercado: 20000000000
+Umbral de volumen diario: 4000000
+Se recomendarán las compañías que cumplen con estos criterios y que ofrecen un alto potencial de ingresos para el inversor agresivo.
+
+Para el perfil "Agresivo" y el objetivo "Crecimiento", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.15, 0.25)
+Umbral anual de volatilidad: 0.35
+Umbral diario de volatilidad: 0.03
+Umbral de beta: 1.3
+Umbral de capitalización de mercado: 30000000000
+Umbral de volumen diario: 5000000
+Se recomendarán las compañías que cumplen con estos criterios y que se consideran oportunidades de alto crecimiento para el inversor agresivo.
+
+Para el perfil "Especulativo" y el objetivo "Ingreso", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.18, 0.25)
+Rango de retornos diarios: (0.0005, 0.005)
+Umbral anual de volatilidad: 0.5
+Umbral diario de volatilidad: 0.05
+Umbral de beta: 1.5
+Umbral de capitalización de mercado: 5000000000
+Umbral de volumen diario: 1000000
+Se recomendarán las compañías que cumplen con estos criterios y que generan un ingreso alto y especulativo para el inversor especulativo.
+
+Para el perfil "Especulativo" y el objetivo "Crecimiento", se definen los siguientes umbrales y rangos para las métricas:
+Rango de retornos anuales: (0.2, 0.3)
+Rango de retornos diarios: (0.001, 0.01)
+Umbral anual de volatilidad: 0.6
+Umbral diario de volatilidad: 0.07
+Umbral de beta: 2.0
+Umbral de capitalización de mercado: 2000000000
+Umbral de volumen diario: 2000000
+Se recomendarán las compañías que cumplen con estos criterios y que se consideran oportunidades especulativas de alto crecimiento para el inversor especulativo.
+
+La diferencia entre la estrategia de un perfil conservador con objetivo de preservación de capital y un perfil conservador con objetivo de ingreso radica en los objetivos de inversión. El perfil conservador con objetivo de preservación de capital se enfoca en proteger el capital invertido y reducir al mínimo cualquier riesgo de pérdida, por lo que se centra en invertir en compañías y activos considerados seguros y estables. Este perfil busca principalmente preservar el capital a largo plazo, y por lo tanto, está dispuesto a sacrificar mayores ganancias potenciales para minimizar el riesgo.
+
+Por otro lado, el perfil conservador con objetivo de ingreso se enfoca en generar ingresos estables y seguros a través de la inversión en compañías y activos con un historial comprobado de pagar dividendos y generar rendimientos. Este perfil busca principalmente mantener el capital invertido y generar un ingreso pasivo a través de inversiones de bajo riesgo, en lugar de buscar un crecimiento significativo en el capital invertido.
+
+En resumen, mientras que el perfil conservador con objetivo de preservación de capital busca minimizar el riesgo y proteger el capital invertido a largo plazo, el perfil conservador con objetivo de ingreso busca generar ingresos estables y seguros a través de inversiones de bajo riesgo.
+
+La diferencia entre la estrategia de un perfil moderado con objetivo de ingreso y un perfil moderado con objetivo de crecimiento es que el primero busca principalmente generar ingresos a través de inversiones en compañías que ofrezcan un rendimiento estable y predecible, mientras que el segundo busca principalmente invertir en compañías que tengan un alto potencial de crecimiento a largo plazo, aunque esto implique una mayor volatilidad en el corto plazo. En otras palabras, el perfil moderado con objetivo de ingreso busca principalmente mantener la estabilidad del capital, mientras que el perfil moderado con objetivo de crecimiento busca maximizar el crecimiento a largo plazo, aunque esto pueda implicar asumir un mayor riesgo en el corto plazo.
+
+La diferencia entre agresivo ingreso y agresivo crecimiento es que en el primer caso, el objetivo principal es generar ingresos elevados y sostenidos a través de inversiones agresivas, mientras que en el segundo caso, el objetivo principal es maximizar el crecimiento a largo plazo, asumiendo un nivel de riesgo elevado. En otras palabras, en el perfil agresivo ingreso se busca generar ingresos por encima del promedio del mercado, mientras que en el perfil agresivo crecimiento se busca superar significativamente el rendimiento del mercado en general, aunque esto implique asumir un mayor riesgo.
+
+El perfil especulativo con objetivo de ingreso y el perfil especulativo con objetivo de crecimiento difieren en su enfoque en la inversión y en la tolerancia al riesgo. El perfil especulativo con objetivo de ingreso busca generar un flujo de efectivo constante a través de inversiones que ofrezcan altos rendimientos, pero a menudo implican un mayor riesgo y volatilidad en el precio de las acciones. Por otro lado, el perfil especulativo con objetivo de crecimiento busca principalmente invertir en compañías que tengan un alto potencial de crecimiento a largo plazo, aunque esto también puede implicar un mayor riesgo y volatilidad en el corto plazo.
+
+En resumen, el perfil especulativo con objetivo de ingreso se enfoca en generar ingresos a corto plazo a través de inversiones especulativas, mientras que el perfil especulativo con objetivo de crecimiento busca maximizar el potencial de crecimiento a largo plazo, aunque esto implique un mayor riesgo y volatilidad en el corto plazo. Ambos perfiles tienen una mayor tolerancia al riesgo que los perfiles conservadores y moderados, y por lo tanto, pueden ser más adecuados para inversores que buscan oportunidades de alto riesgo y alta recompensa.
+
+Para consultar las recomendaciones generadas ir a: 
 
