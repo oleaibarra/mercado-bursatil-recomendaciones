@@ -6,3 +6,4 @@ requests
 matplotlib
 datetime
 fredapi
+numpy
