@@ -126,7 +126,7 @@ elif opcion == 'Análisis del S&P 500':
         sp500_adj_close = sp500_1960['Adj Close'].resample('Y').last()
 
         # Load the inflation data from the CSV file
-        inflation_df = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/inflacion_USA.csv', header=0, index_col='year', parse_dates=True)
+        inflation_df = pd.read_csv('https://github.com/oleaibarra/mercado-bursatil-recomendaciones/blob/main/inflacion_USA.csv', header=1, index_col='year', parse_dates=True)
 
         inflation_factors = 1 + (inflation_df['inflation'] / 100)
         cumulative_inflation_factors = inflation_factors.cumprod()
