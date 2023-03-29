@@ -1,0 +1,8 @@
+pandas
+streamlit
+plotly
+yfinance
+requests
+matplotlib
+datetime
+fredapi
