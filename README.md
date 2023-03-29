@@ -1,6 +1,36 @@
+El S&P 500 es un índice bursátil que sigue el rendimiento de las 500 empresas más grandes que cotizan en la bolsa de valores de Estados Unidos, por lo que no es un activo individual que se pueda comprar o vender directamente. Sin embargo, se pueden utilizar instrumentos financieros como ETFs, futuros y opciones para tomar posiciones en el S&P 500 y seguir diferentes estrategias de inversión.
+
+En general, las estrategias de inversión en el S&P 500 se pueden dividir en dos categorías: estrategias a largo plazo y estrategias a corto plazo.
+
+## Estrategias a largo plazo:
+
+Inversión pasiva en el S&P 500: una estrategia a largo plazo común en el S&P 500 es simplemente invertir en un fondo cotizado (ETF) que siga el índice, con el objetivo de obtener ganancias a largo plazo en función del rendimiento del mercado en general.
+
+Inversión en acciones de empresas de alta calidad: otra estrategia a largo plazo es invertir en acciones de empresas que forman parte del S&P 500 y que tienen un historial de crecimiento y rentabilidad a largo plazo.
+
+## Estrategias a corto plazo:
+
+Inversión en ETFs inversos: una estrategia a corto plazo es invertir en ETFs inversos, que se diseñan para seguir el movimiento inverso del S&P 500. Esto permite a los inversores obtener ganancias cuando el índice disminuye en valor.
+
+Trading diario: los inversores que utilizan esta estrategia compran y venden el S&P 500 en el mismo día, esperando obtener ganancias a corto plazo en función de las fluctuaciones diarias del mercado.
+
+Es importante tener en cuenta que cualquier estrategia de inversión conlleva riesgos y es importante analizar cuidadosamente las opciones antes de tomar cualquier decisión de inversión. También es importante diversificar la cartera de inversiones y tener un horizonte de inversión claro para lograr los objetivos a largo plazo.
+
+## ¿Por qué seguir una estrategia de largo plazo?
+
+Generalmente se requiere un mayor conocimiento y experiencia del mercado bursátil para las estrategias a corto plazo, ya que involucran operaciones más frecuentes y de corta duración. Las estrategias a corto plazo como el trading diario y la inversión en ETFs inversos pueden ser riesgosas y pueden llevar a pérdidas significativas si no se comprenden bien.
+
+Para tener éxito en las estrategias a corto plazo, los inversores deben estar bien informados sobre el mercado y las noticias financieras, y también deben tener una buena comprensión de las técnicas de análisis técnico y fundamental. Es importante saber cómo leer gráficos de precios, interpretar indicadores técnicos y estar al tanto de los eventos que puedan afectar al mercado.
+
+Además, las estrategias a corto plazo suelen requerir una dedicación más intensiva de tiempo y recursos que las estrategias a largo plazo. Los inversores que utilizan estrategias a corto plazo deben estar dispuestos a monitorear constantemente el mercado y actuar rápidamente ante los cambios de precio.
+
+En general, las estrategias a corto plazo pueden ser más arriesgadas que las estrategias a largo plazo, y requieren una mayor comprensión y experiencia del mercado bursátil. Se recomienda que los inversores novatos comiencen con estrategias a largo plazo y se familiaricen con el mercado antes de aventurarse en las estrategias a corto plazo.
+
+# El proyecto:
+
 # mercado-bursatil-recomendaciones
 
-El presente proyecto busca analizar en detalle el mercado bursátil de las principales 500 empresas pertenecientes al índice SP500 (Standard & Poor's 500 Index) en el período comprendido entre el año 2000 y el presente año 2023. El análisis se enfocará en distintos aspectos, como la variación de precios en el tiempo, la comparación entre distintas acciones, el cálculo de estadísticas bursátiles (volatilidad, promedios móviles, entre otras), recomendaciones basadas en el retorno y riesgo de inversión, y la creación de KPIs útiles para la toma de decisiones de inversión.
+El presente proyecto busca analizar el mercado bursátil de las principales 500 empresas pertenecientes al índice SP500 (Standard & Poor's 500 Index) en el período comprendido entre el año 2000 y el presente año 2023. El análisis se enfocará en distintos aspectos, como la variación de precios en el tiempo, la comparación entre distintas acciones, el cálculo de estadísticas bursátiles (volatilidad, promedios móviles, entre otras), recomendaciones basadas en el retorno y riesgo de inversión, y la creación de KPIs útiles para la toma de decisiones de inversión.
 
 El informe del proyecto está compuesto por un análisis exploratorio de los datos (EDA), el cual incluye un resumen de estadísticas descriptivas, análisis univariados y bivariados, entre otros, que permita entender mejor los datos, encontrar patrones, outliers y/o anomalías, etc. Este análisis se presenta en un notebook (.ipynb) con adecuado uso de markdowns y comentarios.
 
@@ -24,70 +54,33 @@ Se proponen los siguientes objetivos:
 
 ## Metodología
 
-Para lograr el objetivo #1 se realizará lo siguiente:
+En el notebook EDA.ipynb se realizó lo siguiente: 
 
-1.1 Descargar los datos históricos del índice SP500 y de las empresas que lo conforman utilizando la librería yfinance.
+Un análisis de datos del S&P 500 y se comparó con diferentes indicadores macroeconómicos como la inflación, tasa de desempleo, tasa de interés de la FED y confianza del consumidor. También se comparó el índice S&P 500 con los ETFs de los sectores económicos que lo componen.
 
-1.2 Realizar una exploración inicial de los datos, observando la distribución de variables numéricas, la presencia de outliers o valores faltantes, y cualquier otra característica relevante.
+En la primera parte, se cargó y exploró el archivo con los datos del S&P 500. Se creó un gráfico para visualizar la evolución del índice a lo largo del tiempo y se calcularon diferentes estadísticas descriptivas para entender la distribución de los precios de cierre ajustados. Se realizó una prueba de estacionariedad y se ajustó el índice por inflación.
 
-1.3 Visualizar la variación de precios en el tiempo, tanto del índice SP500 como de las acciones individuales, utilizando gráficos de línea.
+En la segunda parte, se descargaron los datos de diferentes indicadores macroeconómicos y se compararon con el índice S&P 500. Se crearon gráficos para visualizar la evolución de la inflación, tasa de desempleo, tasa de interés de la FED y confianza del consumidor. Se calculó la matriz de correlación entre el índice S&P 500 y los diferentes indicadores macroeconómicos. Además, se creó un diccionario con los ETFs de los sectores económicos y se comparó el precio de cierre ajustado promedio de cada sector con el índice S&P 500. Por último, se creó un gráfico para visualizar la evolución del índice S&P 500 y los ETFs de los diferentes sectores económicos.
 
-1.4 Comparar la variación de precios entre las diferentes acciones mediante la creación de gráficos de líneas superpuestas.
+En el notebook complemento_EDA.ipynb se realizó lo siguiente:
 
-1.5 Calcular y visualizar estadísticas bursátiles relevantes, tales como la volatilidad, el promedio móvil, el retorno diario, el riesgo, entre otras.
+ Aquí se decidió enfocarse en analizar un número limitado de empresas (5) de las más grandes y con mayor capitalización de mercado para determinar si conviene invertir en el S&P 500 como índice o en empresas individuales. Para ello, se descargaron datos históricos de precios de cierre utilizando la librería yfinance en Python y se calcularon los rendimientos diarios de las empresas y del S&P 500. Luego, se calcularon las estadísticas de rendimiento y riesgo para cada empresa y para el S&P 500, y se generó un gráfico de dispersión para comparar los rendimientos y el riesgo de cada empresa en relación con el S&P 500. También se generaron gráficos adicionales para comparar el rendimiento y la volatilidad anual de las empresas y del índice en los últimos 5 años, y se graficaron los precios de cierre ajustados de las empresas y del índice en función del tiempo.
 
-1.6 Identificar cualquier patrón, tendencia o comportamiento relevante a través de la exploración y el análisis de los datos.
+En el notebook metricas_500_empresas.ipynb se realizó lo siguiente: 
 
-Para lograr el objetivo #2 se realizará lo siguiente:
+Se utilizó la librería yfinance para descargar los precios de cierre ajustados de las acciones de las empresas que conforman el índice S&P500, para el periodo comprendido entre el 1 de enero del 2018 y el 28 de marzo del 2023. Posteriormente se agrega el índice S&P500 al dataframe y se exporta a un archivo parquet para ser utilizado posteriormente.
 
-2.1 Seleccionar las empresas que tengan una buena relación riesgo-retorno en el período analizado.
+Se realiza un cálculo para eliminar las empresas que no tienen información completa para los últimos 5 años, utilizando el método "dropna" del objeto DataFrame de Pandas.
 
-2.2 Realizar un análisis de correlación para identificar aquellas empresas que tengan una correlación baja entre ellas, es decir, que no se comporten de manera similar en el mercado.
+Se calculan los retornos diarios para cada empresa, a través del método "pct_change" del objeto DataFrame de Pandas.
 
-2.3 Identificar rubros que hayan tenido un buen rendimiento en el período analizado y seleccionar empresas dentro de estos rubros.
+A partir de los retornos diarios, se calculan los siguientes indicadores financieros:
 
-2.4 Realizar un análisis de regresión para identificar aquellas empresas que tengan un buen ajuste a la tendencia del mercado.
+Retorno anualizado
+Volatilidad diaria y anualizada
+Coeficiente de Sharpe
+Índice de Treynor
+Coeficiente de información
+Cada uno de estos cálculos se realiza mediante ciclos para cada una de las empresas que conforman el S&P500, y se utilizan los métodos y funciones de la librería numpy y pandas para los cálculos matemáticos.
 
-2.5 Utilizar la técnica de clustering para agrupar empresas similares y seleccionar aquellas que se encuentren en grupos con buen desempeño.
 
-2.6 Analizar noticias y eventos recientes que puedan afectar el desempeño futuro de las empresas.
-
-2.7 Presentar recomendaciones de inversión en base a los análisis realizados.
-
-**NOTA:** Es importante tener en cuenta que las recomendaciones de inversión no son una garantía de ganancia, sino que son una orientación en base a los análisis realizados y a la situación actual del mercado.
-
-### 3) Para lograr el objetivo #3 se seguirán estos pasos:
-
-3.1 Identificar las variables y métricas más relevantes para la inversión en bolsa. Esto podría incluir, por ejemplo, la rentabilidad, el riesgo, la volatilidad, el volumen de operaciones, la capitalización de mercado, entre otros.
-
-3.2 Seleccionar las empresas del índice SP500 sobre las cuales se construirán los KPIs. Es importante que las empresas sean representativas del mercado bursátil y que incluyan una variedad de sectores y rubros.
-
-3.3 Calcular los KPIs para cada empresa. Estos pueden incluir métricas como la rentabilidad promedio, el riesgo relativo, la volatilidad, la relación precio-beneficio (P/E ratio), entre otros.
-
-3.4 Evaluar y comparar los KPIs de las diferentes empresas para identificar aquellas que ofrecen mejores oportunidades de inversión. Es importante tener en cuenta el contexto del mercado bursátil y otros factores externos que puedan influir en la inversión.
-
-3.5 Presentar los KPIs de forma clara y concisa, utilizando visualizaciones y gráficos interactivos para facilitar la comprensión y la toma de decisiones de inversión.
-
-3.6 Realizar un seguimiento constante de los KPIs y actualizarlos regularmente para mantenerse al tanto de los cambios en el mercado y hacer ajustes en las decisiones de inversión si es necesario.
-
-### 4) Para lograr el objetivo #4 se seguirán los siguientes pasos: 
-
-4.1 Seleccionar la herramienta de visualización de datos y framework Streamlit para la creación del dashboard.
-
-4.2 Crear un archivo de Python que contenga el código para generar el dashboard.
-
-4.3 Importar los datos procesados y analizados en los objetivos anteriores para su uso en el dashboard.
-
-4.4 Seleccionar las visualizaciones y gráficos que se utilizarán para mostrar la información de manera clara y concisa.
-
-4.5 Crear las funciones y objetos interactivos necesarios para la exploración y manipulación de los datos.
-
-4.6 Crear una interfaz de usuario amigable que permita al usuario interactuar con el dashboard.
-
-4.7 Probar el dashboard y asegurarse de que la información se muestre de manera clara y coherente.
-
-4.8 Hacer ajustes y mejoras según sea necesario.
-
-4.9 Desplegar el dashboard en una plataforma en línea para su acceso y uso por parte de la empresa.
-
-Se documentará todo el proceso en un notebook de Jupyter y en este repositorio de GitHub.
